@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title><%= deck.nome %>></title>
+  </head>
+  <body id="details">
+    <nav class="menu">
+      <ul>
+        <li><img src="/img/yugioh.png" alt="" /></li>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/cadastro">Cadastro</a></li>
+        <li> <a id="editar" href="/editar/<%= deck.id %>">Editar</a></li>
+        <li><a id="apagar" href="/deletar/<%= deck.id %>" onclick="apagar()">Apagar</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 id="descri"><%= deck.descricao %></h2>
+
+      <div class="itens">
+        <div class="zoom">
+          <img class="img" src="<%= deck.card1 %>" alt="apareça" />
+        </div>
+       <div class="zoom">
+        <img class="img" src="<%= deck.card2 %>" alt="apareça" />
+       </div>
+       <div class="zoom">
+        <img class="img" src="<%= deck.card3 %>" alt="apareça" />
+       </div>
+        
+      </div>
+    </main>
+    <footer>
+      <p>
+        <a href="https://github.com/iorgeAnjos">@iorgeAnjos</a>
+      </p>
+    </footer>
+    <script src="/assets/js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

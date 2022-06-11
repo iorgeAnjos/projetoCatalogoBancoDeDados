@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Cadastro</title>
+  </head>
+  <body id="details" >
+    <nav class="menu">
+      <ul>
+        <li><img src="/img/yugioh.png" alt="" /></li>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+      </ul>
+    </nav>
+    
+    <main id="registro">
+        <section id="cadastro">
+            <form action="/criacao" method="post" onsubmit="cadastro()">
+                <label for="nome">Nome do deck:</label>
+                <input type="text" id="nome" name="nome" required />
+          
+                <label for="img">Link da imagem do deck:</label>
+                <input type="text" id="img" name="img" required />
+          
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required />
+          
+                <label for="card1">Link da Primeira carta:</label>
+                <input type="text" id="card1" name="card1" required />
+          
+                <label for="card2">Segunda carta:</label>
+                <input type="text" id="card2" name="card2" required />
+          
+                <label for="card3">Terceira carta:</label>
+                <input type="text" id="card3" name="card3" required />
+          
+                <button id="btnCadastrar" type="submit">Cadastrar</button>
+        </section>
+    </main>
+    
+
+    
+    </form>
+    <footer>
+        <p>
+          <a href="https://github.com/iorgeAnjos">@iorgeAnjos</a>
+        </p>
+      </footer>
+    <script src="/assets/js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

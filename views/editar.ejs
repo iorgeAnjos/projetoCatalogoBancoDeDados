@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body id="details" >
+    <nav class="menu">
+      <ul>
+        <li><img src="/img/yugioh.png" alt="" /></li>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+      </ul>
+    </nav>
+    
+    <main id="registro">
+        <section id="edicao">
+            <form action="/editar/<%=deck.id %>" method="post" onsubmit="editar()">
+                <label for="nome">Nome do deck:</label>
+                <input type="text" id="nome" name="nome" value="<%= deck.nome %>" required />
+          
+                <label for="img">Link da imagem do deck:</label>
+                <input type="text" id="img" name="img" value="<%= deck.img %>" required />
+          
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" value="<%= deck.descricao%>" required />
+          
+                <label for="card1">Link da Primeira carta:</label>
+                <input type="text" id="card1" name="card1" value="<%= deck.card1 %>" required />
+          
+                <label for="card2">Link da Segunda carta:</label>
+                <input type="text" id="card2" name="card2" value="<%= deck.card2 %>" required />
+          
+                <label for="card3">Link da Terceira carta:</label>
+                <input type="text" id="card3" name="card3" value="<%= deck.card3 %>" required />
+          
+                <button id="btnEditar" type="submit">Alterar</button>
+                
+               
+        </section>
+    </main>
+    
+
+    
+    </form>
+    <footer>
+        <p>
+          <a href="https://github.com/iorgeAnjos">@iorgeAnjos</a>
+        </p>
+      </footer>
+    <script src="/assets/js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>YuGiOh</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <ul>
+        <li><img src="img/yugioh.png" alt="" /></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="/criar">Cadastro</a></li>
+        
+        
+        <li><a href="#rei">Deck</a></li>
+      </ul>
+    </nav>
+    <header id="inicio">
+      <img 
+        src="img/yugi.jpg"
+        alt=""
+      />
+    </header>
+    
+    <main>
+      
+        <section id="rei">
+          <h1>É HORA DO DUELO</h1>
+            <% cards.forEach(item =>{%>
+                <div class="reis">
+                  
+                  <a href="/cards/<%= item.id %>"> <img src="<%=item.img %>" alt=""></a>
+                   
+                    <p><%= item.nome %></p>
+                    
+                    
+
+                      
+                </div>
+            <%})%>
+            
+        </section>
+        
+
+    </main>
+    <footer>
+      <p>
+        <a href="https://github.com/iorgeAnjos">@iorgeAnjos</a>
+      </p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

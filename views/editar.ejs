@@ -17,7 +17,7 @@
     </nav>
     
     <main id="registro">
-        <section id="edicao">
+        <section class="cadastro">
             <form action="/editar/<%=deck.id %>" method="post" onsubmit="editar()">
                 <label for="nome">Nome do deck:</label>
                 <input type="text" id="nome" name="nome" value="<%= deck.nome %>" required />

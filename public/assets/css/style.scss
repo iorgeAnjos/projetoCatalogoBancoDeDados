@@ -88,7 +88,7 @@ main #rei h1 {
   margin: 0 5rem 0 5rem;
 }
 
-#cadastro {
+.cadastro {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -96,7 +96,7 @@ main #rei h1 {
   color: #dfdb9b;
 }
 
-#cadastro input {
+.cadastro input {
   width: 100%;
   padding: 0.6rem;
   font-size: 1.1rem;
@@ -107,7 +107,7 @@ main #rei h1 {
   background-color: #858585;
   color: rgb(136, 0, 0);
 }
-section#cadastro form button {
+section.cadastro form button {
   padding: 0.6rem;
   display: flex;
   margin: 0 auto;
@@ -119,13 +119,13 @@ section#cadastro form button {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-section#cadastro form button:hover {
+section.cadastro form button:hover {
   background-color: black;
   color: #dfdb9b;
   border: solid 1px #dfdb9b;
 }
 
-#edicao {
+/* #edicao {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -160,7 +160,7 @@ section#edicao form button:hover {
   background-color: black;
   color: #dfdb9b;
   border: solid 1px #dfdb9b;
-}
+} */
 footer {
   background-color: #dfdb9b;
   color: black;
